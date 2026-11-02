@@ -612,7 +612,7 @@ public final class Hud {
 
          if (has && stack.getMaxDamage() > 0) {
             float pct = 1.0F - (float)stack.getDamage() / (float)stack.getMaxDamage();
-            int col = pct > 0.5F ? Theme.GREEN : (pct > 0.2F ? Theme.YELLOW : Theme.RED);
+             int col = pct > 0.5F ? Theme.GREEN : (pct > 0.2F ? 0xFFFFFF55 : Theme.RED);
             Nvg.textC(Math.round(pct * 100.0F) + "%", sx + slotW * 0.5F, y + 21.0F, 8.0F, false, col);
             float barW = slotW - 6.0F;
             Nvg.rect(sx + 3.0F, y + 26.0F, barW, 2.0F, 1.0F, 0x33FFFFFF);
