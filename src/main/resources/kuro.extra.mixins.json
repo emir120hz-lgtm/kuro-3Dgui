@@ -10,7 +10,8 @@
     "BlockRenderManagerMixin",
     "InGameHudMixin",
     "TeamMixin",
-    "ScoreboardEntryMixin"
+    "ScoreboardEntryMixin",
+    "ClientCommonNetworkHandlerMixin"
   ],
   "injectors": {
     "defaultRequire": 0
